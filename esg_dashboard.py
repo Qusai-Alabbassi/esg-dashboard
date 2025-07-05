@@ -12,8 +12,8 @@ import plotly.graph_objects as go
 import base64
 
 # Load data
-excel_path = "/Users/qusaialabbassi/Desktop/pythonprojects/Alcazar Energy/ESG_KPI_Dataset.xlsx"
-logo_path = "/Users/qusaialabbassi/Desktop/pythonprojects/Alcazar Energy/alcazar_logo.png"
+excel_path = "ESG_KPI_Dataset.xlsx"
+logo_path = "alcazar_logo.png"
 kpi_data = pd.read_excel(excel_path)
 kpi_data.dropna(inplace=True)
 kpi_data["Year"] = kpi_data["Year"].astype(int)
