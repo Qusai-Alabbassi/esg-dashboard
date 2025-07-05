@@ -149,10 +149,8 @@ def update_kpi_graph(pillar, category, kpi):
     return fig
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=port, debug=True)
     
-# http://127.0.0.1:8050/
-
 
 # In[ ]:
 
