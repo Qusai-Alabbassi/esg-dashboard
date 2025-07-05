@@ -10,6 +10,7 @@ from dash import html, dcc, Input, Output, State
 import pandas as pd
 import plotly.graph_objects as go
 import base64
+import os
 
 # Load data
 excel_path = "ESG_KPI_Dataset.xlsx"
@@ -149,7 +150,9 @@ def update_kpi_graph(pillar, category, kpi):
     return fig
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8050))
     app.run(host="0.0.0.0", port=port, debug=True)
+
     
 
 # In[ ]:
